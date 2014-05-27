@@ -45,7 +45,7 @@ template "/etc/nginx/sites-available/grafana" do
     :listen_address   => node['grafana']['webserver_listen'],
     :listen_port      => node['grafana']['webserver_port'],
     :es_basic_auth    => es_basic_auth.to_s,
-    :graphite_basic_auth => graphite_basic_auth.to_s,
+    :graphite_basic_auth => graphite_basic_auth.to_s
   )
 end
 
